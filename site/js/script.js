@@ -1,4 +1,3 @@
-
 // АНИМАЦИЯ НАВИГАЦИИ
 
 let navBack = document.querySelector(".nav__background");
@@ -26,3 +25,41 @@ navBtn.addEventListener("click", function () {
 
 	navIcon.classList.toggle("turn--nav");
 });
+
+// КНОПКА НАВЕРХ
+
+let topBtn = document.querySelector(".top");
+
+topBtn.onclick = function () {
+  window.scrollTo(0, 0);
+};
+
+window.onscroll = function () { 
+  if (window.pageYOffset > 400) {
+    topBtn.style.display="flex"; 
+    }
+  else {
+    topBtn.style.display="none";
+  }
+};
+
+// ВСПЛЫВАЮЩЕЕ ОКНО
+
+let windowModal = document.querySelector(".windowModal");
+let modalBtn = document.querySelector(".windowModal__block--svg");
+
+function openWindow () {
+	windowModal.classList.add("flex");
+};
+
+setTimeout(openWindow, 4000);
+
+modalBtn.addEventListener("click", function () {
+	windowModal.classList.remove("flex");
+});
+
+
+
+
+  
+
