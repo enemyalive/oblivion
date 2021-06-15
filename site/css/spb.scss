@@ -1,0 +1,276 @@
+@font-face {
+	font-family: "Ustroke";
+	font-weight: 400;
+	src: url(../fonts/ustroke.ttf);
+}
+
+@font-face {
+	font-family: "SavingsBond";
+	font-weight: 400;
+	src: url(../fonts/savings_bond.ttf);
+}
+
+@font-face {
+	font-family: "Nexa Script";
+	font-weight: 300;
+	src: url(../fonts/nexa_script.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+// ШАПКА
+
+.header {
+	background-image: url(../img/spb_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 450px 25px 351px 25px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+
+	&__h {
+		font-size: 85px;
+		font-family: "Ustroke";
+		font-weight: 400;
+		color: rgb(232, 90, 79);
+		text-shadow: 0px 12px 29px rgba(0, 0, 0, 0.35);
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		width: 94px;
+		height: 41px;
+		background-color: rgb(233, 128, 116);
+		border-radius: 10px;
+		box-shadow: 0px 12px 29px 0px rgba(0, 0, 0, 0.35);
+		outline: none;
+		cursor: pointer;
+		transition: 1s;
+
+		&:hover {
+			background-color: #E85A4F;
+		}
+	}
+
+}
+
+// НАВИГАЦИЯ
+
+.nav {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: left;
+align-items: center;
+
+	&__punkts {
+		position: fixed;
+		width: 0;
+		height: 100vh;
+		background-color: rgb(216, 195, 165);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: 1s;
+		z-index: 3;
+		border-right: 2px solid black;
+
+		&__btn {
+			font-size: 30px;
+			font-family: "SavingsBond";
+			font-weight: 400;
+			color: rgb(232, 90, 79);
+			text-shadow: 0px 12px 29px rgba(0, 0, 0, 0.35);
+			margin-bottom: 50px;
+			cursor: pointer;
+			text-decoration: none;
+			margin-left: -300px;
+			transition: 1s;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:hover {
+				color: rgb(0, 0, 0);
+			}
+
+		}
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 46px;
+		height: 53px;
+		background-color: rgb(233, 128, 116);
+		border-radius: 0 10px 10px 0;
+		box-shadow: 0px 12px 29px 0px rgba(0, 0, 0, 0.35);
+		outline: none;
+		cursor: pointer;
+		position: fixed;
+		transition: 1s;
+		z-index: 3;
+
+		&:hover {
+			background-color: #E85A4F;
+		}
+
+		&--icon {
+			transition: 1s;
+		}
+	}
+
+	&__background {
+		position: fixed;
+		transition: 1s;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+
+}
+
+// ГЛАВНОЕ
+
+.main {
+	background-color: rgb(216, 195, 165);
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	
+		&--container {
+			display: block;
+			width: 63.5%;
+			margin: 0 auto;
+			background-color: rgb(234, 231, 220);
+			padding-top: 1px;
+		}
+
+		&__section {
+			padding-bottom: 15px;
+			border-bottom: 1px solid rgb(216, 195, 165);
+
+			&__sort {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-top: 26px;
+				padding-bottom: 30px;
+
+				&__btn {
+					font-size: 25px;
+					font-family: "SavingsBond";
+					font-weight: 400;
+					color: rgb(0, 0, 0);
+					padding: 5px 15px;
+					margin-left: 30px;
+					background-color: #D8C3A5;
+					border-radius: 7px;
+					outline: none;
+					cursor: pointer;
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+				
+			}
+
+			&__blocks {
+				display: grid;
+
+				&--img {
+					width: 100%;
+				}
+
+				&__pink {
+					width: 21%;
+					background-color: rgb(233, 128, 116);
+					border-radius: 0 0 10px 10px;
+					box-shadow: 
+					0px 12px 29px 0px rgba(0, 0, 0, 0.35),
+					inset 0 0 0 0;
+					transition: 1s;
+
+					&:hover {
+						box-shadow:
+						0 0 0 0,
+						inset 0 0 7px black;
+					}
+				}
+
+				&__beige {
+					width: 21%;
+					background-color: rgb(216, 195, 165);
+					border-radius: 0 0 10px 10px;
+					box-shadow: 
+					0px 12px 29px 0px rgba(0, 0, 0, 0.35),
+					inset 0 0 0 0;
+					transition: 1s;
+
+					&:hover {
+						box-shadow:
+						0 0 0 0,
+						inset 0 0 7px black;
+					}
+				}
+
+				&__grey {
+					width: 21%;
+					background-color: #8E8D8A;
+					border-radius: 0 0 10px 10px;
+					box-shadow: 
+					0px 12px 29px 0px rgba(0, 0, 0, 0.35),
+					inset 0 0 0 0;
+					transition: 1s;
+
+					&:hover {
+						box-shadow:
+						0 0 0 0,
+						inset 0 0 7px black;
+					}
+				}
+			}
+		
+		}
+		
+}
+
+.help {
+	position: relative; 
+
+	&:hover::after {
+		content: attr(data-title);
+		position: absolute;
+		top: 55%; 
+		width: 90%;
+		z-index: 1; 
+		background: black; 
+		font-family: "Nexa Script";
+		font-weight: 300;
+		color: #D8C3A5;
+		text-align: center;
+		font-size: 13px; 
+		padding: 5px 10px; 
+		border: 1px solid #333; 
+		border-radius: 5px;
+	 }
+ }
