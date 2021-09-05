@@ -588,6 +588,7 @@
 
 .help {
   position: relative;
+  cursor: pointer;
 }
 
 .help:hover::after {
