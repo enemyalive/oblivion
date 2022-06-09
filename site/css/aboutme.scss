@@ -1,0 +1,465 @@
+@font-face {
+	font-family: "Ustroke";
+	font-weight: 400;
+	src: url(../fonts/ustroke.ttf);
+}
+
+@font-face {
+	font-family: "SavingsBond";
+	font-weight: 400;
+	src: url(../fonts/savings_bond.ttf);
+}
+
+@font-face {
+	font-family: "Nexa Script";
+	font-weight: 300;
+	src: url(../fonts/nexa_script.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+// ШАПКА
+
+.header {
+	background-image: url(../img/aboutme_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 450px 25px 351px 25px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+
+	&__h {
+		font-size: 85px;
+		font-family: "Ustroke";
+		font-weight: 400;
+		color: rgb(232, 90, 79);
+		text-shadow: 0px 12px 29px rgba(0, 0, 0, 0.35);
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		width: 94px;
+		height: 41px;
+		background-color: rgb(233, 128, 116);
+		border-radius: 10px;
+		box-shadow: 0px 12px 29px 0px rgba(0, 0, 0, 0.35);
+		outline: none;
+		cursor: pointer;
+		transition: 1s;
+
+		&:hover {
+			background-color: #E85A4F;
+		}
+	}
+
+}
+
+// НАВИГАЦИЯ
+
+.nav {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: left;
+align-items: center;
+
+	&__punkts {
+		position: fixed;
+		width: 0;
+		height: 100vh;
+		background-color: rgb(216, 195, 165);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: 1s;
+		z-index: 3;
+		border-right: 2px solid black;
+
+		&__btn {
+			font-size: 30px;
+			font-family: "SavingsBond";
+			font-weight: 400;
+			color: rgb(232, 90, 79);
+			text-shadow: 0px 12px 29px rgba(0, 0, 0, 0.35);
+			margin-bottom: 50px;
+			cursor: pointer;
+			text-decoration: none;
+			margin-left: -300px;
+			transition: 1s;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:hover {
+				color: rgb(0, 0, 0);
+			}
+
+		}
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 46px;
+		height: 53px;
+		background-color: rgb(233, 128, 116);
+		border-radius: 0 10px 10px 0;
+		box-shadow: 0px 12px 29px 0px rgba(0, 0, 0, 0.35);
+		outline: none;
+		cursor: pointer;
+		position: fixed;
+		transition: 1s;
+		z-index: 3;
+
+		&:hover {
+			background-color: #E85A4F;
+		}
+
+		&--icon {
+			transition: 1s;
+		}
+	}
+
+	&__background {
+		position: fixed;
+		transition: 1s;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+
+}
+
+// ГЛАВНОЕ
+
+.main {
+	background-color: rgb(216, 195, 165);
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	
+		&--container {
+			display: block;
+			width: 63.5%;
+			margin: 0 auto;
+			background-color: rgb(234, 231, 220);
+			padding-top: 1px;
+		}
+
+		&__section {
+			border-bottom: 1px solid rgb(216, 195, 165);
+
+			&__blocks {
+				margin-bottom: 40px;
+
+				&__block1 {
+					padding: 3%;
+					padding-top: 60px;
+					display: grid;
+					grid-template-columns: 26% 45% 26%;
+					grid-column-gap: 1%;
+  					align-items: center;
+					justify-content: center;
+				}
+
+				&__block2 {
+					padding: 3%;
+					padding-top: 40px;
+					display: grid;
+					grid-template-columns: 26% 45% 26%;
+					grid-column-gap: 1%;
+  					align-items: center;
+					justify-content: center;
+				}
+
+				&__block3 {
+					padding: 3%;
+					padding-top: 40px;
+
+					&--container {
+						display: grid;
+						padding-top: 30px;
+						grid-template-columns: 24% 24% 24% 24%;
+						grid-column-gap: 1%;
+						height: 275px;
+					}
+				}
+
+				&__p {
+					font-size: 25px;
+					font-family: "Nexa Script";
+					font-weight: 300;
+					line-height: 40px;
+					color: rgb(0, 0, 0);
+					text-align: center;					  
+				}
+
+				&--linered {
+					margin-top: 30px;
+					border-bottom: 1px solid rgb(232, 90, 79);
+				}
+
+				&__circle {
+					width: 30px;
+					height: 30px;
+					background-color: #E85A4F;
+					border-radius: 50px;
+					margin: auto;
+					transition: 3s;
+					cursor: pointer;
+				}
+ 
+				&__picture {
+					width: 90%;
+					border-radius: 50%;
+					margin: auto;
+					transition: 3s;
+				}
+
+			}
+		
+		}
+		
+}
+
+.films {
+	padding-top: 170px;
+}
+
+.games {
+	padding-top: 80px;
+}
+
+// ПОДВАЛ
+
+.footer {
+	background-color: black;
+	position: relative;
+	z-index: 1;
+
+	&--container {
+		display: flex;
+		justify-content: space-evenly;
+		width: 63.5%;
+		margin: 0 auto;
+		padding-top: 15px;
+		flex-wrap: wrap;
+	}
+
+	&__col {
+
+		&__p {
+			font-size: 15px;
+			font-family: "Nexa Script";
+			font-weight: 300;
+			color: rgb(234, 231, 220);
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			margin-top: 3px;
+			transition: 0.5s;
+
+			&:hover {
+			font-weight: 600;
+			color: #E85A4F;
+			}
+
+			&--marg {
+				margin-bottom: 20px;
+			}
+		}
+
+		&__cop {
+			font-size: 15px;
+			font-family: "Nexa Script";
+			font-weight: 300;
+			color: rgb(234, 231, 220);
+			margin-top: 20px;
+		}
+
+		&__cat {
+			margin-right: 12px;
+		}
+
+		&__inst {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 12px;
+
+			&__p {
+				font-size: 17px;
+				font-family: "Nexa Script";
+				font-weight: 300;
+				color: rgb(234, 231, 220);
+				text-decoration: none;
+				display: flex;
+				margin-bottom: 15px;
+				transition: 0.5s;
+
+				&::before {
+					content: "";
+					display: inline-block;
+					width: 21px;
+					height: 21px;
+					background-image: url(../img/inst.png);
+					margin-right: 10px;
+				}
+
+				&:hover {
+					font-weight: 600;
+					color: #E85A4F;
+				}
+			}
+
+			&__posts {
+				
+				&__post {
+
+					&--img {
+						width: 50px;
+						height: 50px;
+						transition: 1s;
+
+						&:hover {
+							transform: scale(1.2);
+						}
+					}
+
+				}
+			}
+		}
+
+		&--center {
+			display: flex;
+			flex-wrap: wrap;
+		}
+				
+	}
+}
+
+// КНОПКА НАВЕРХ
+
+.top {
+	display: none;
+	justify-content: flex-end;
+	align-items: center;
+	width: 48px;
+	height: 51px;
+	background-color: rgb(233, 128, 116);
+	border-radius: 10px 0 0 10px;
+	box-shadow: 0px 12px 29px 0px rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+	outline: none;
+	position: fixed;
+	bottom: 30px;
+	right: 0;
+	transition: 1s;
+	z-index: 1;
+
+	&:hover {
+		background-color: #E85A4F;
+	}
+}
+
+ // АНИМАЦИЯ И ЭФФЕКТЫ
+
+ .width {
+	&--nav {
+		width: 302px; 
+	}
+}
+
+.background {
+	&--nav {
+		z-index: 2;
+	}
+}
+
+.margin {
+	&--nav {
+		margin-left: 0;
+	}
+	&--nav2 {
+		margin-left: -500px;
+	}
+	&--nav3 {
+		margin-left: 302px;
+	}
+}
+
+.turn {
+	&--nav {
+		transform: rotate(180deg);
+	}
+}
+
+.strong {
+	font-weight: 600;
+}
+
+.flex {
+	display: flex;
+}
+
+.hidden {
+	display: none;
+}
+
+.opacity {
+	opacity: 0;
+}
+
+.redtxt {
+	color:rgb(232, 90, 79);
+}
+
+@media (max-width:1440px) {
+	.main--container {
+		width: 100%;
+	}
+}
+
+@media (max-width:915px) {
+
+	.header {
+		padding-top: 300px;
+	}
+}
+
+@media (max-width:850px) {
+	.footer__col {
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	}
+}
+
+@media (max-width:600px) {
+	.footer__col__cat {
+	  	margin: 0 auto;
+	}
+	.footer__col__inst {
+		margin: 0 auto;
+	}
+	.header__h {
+		font-size: 70px;
+	}
+}

@@ -191,6 +191,7 @@ align-items: center;
 				align-items: flex-start;
 				margin-bottom: 20px;
 				text-align: left;
+				flex-wrap: wrap;
 				
 				&__grey {
 					width: 21%;
@@ -200,6 +201,8 @@ align-items: center;
 					0px 12px 29px 0px rgba(0, 0, 0, 0.35),
 					inset 0 0 0 0;
 					transition: 1s;
+					min-width: 200px;
+					min-height: 370px;
 
 					&:hover {
 						box-shadow:
@@ -216,6 +219,8 @@ align-items: center;
 					0px 12px 29px 0px rgba(0, 0, 0, 0.35),
 					inset 0 0 0 0;
 					transition: 1s;
+					min-width: 200px;
+					min-height: 370px;
 
 					&:hover {
 						box-shadow:
@@ -232,6 +237,8 @@ align-items: center;
 					0px 12px 29px 0px rgba(0, 0, 0, 0.35),
 					inset 0 0 0 0;
 					transition: 1s;
+					min-width: 200px;
+					min-height: 370px;
 
 					&:hover {
 						box-shadow:
@@ -330,6 +337,7 @@ align-items: center;
 		width: 63.5%;
 		margin: 0 auto;
 		padding-top: 15px;
+		flex-wrap: wrap;
 	}
 
 	&__col {
@@ -349,6 +357,10 @@ align-items: center;
 			font-weight: 600;
 			color: #E85A4F;
 			}
+
+			&--marg {
+				margin-bottom: 20px;
+			}
 		}
 
 		&__cop {
@@ -367,7 +379,7 @@ align-items: center;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			margin-left: 12px;
+			margin-right: 12px;
 
 			&__p {
 				font-size: 17px;
@@ -414,6 +426,7 @@ align-items: center;
 
 		&--center {
 			display: flex;
+			flex-wrap: wrap;
 		}
 				
 	}
@@ -497,7 +510,7 @@ align-items: center;
 
 .width {
 	&--nav {
-		width: 16%; 
+		width: 302px; 
 	}
 }
 
@@ -515,7 +528,7 @@ align-items: center;
 		margin-left: -500px;
 	}
 	&--nav3 {
-		margin-left: 16%;
+		margin-left: 302px;
 	}
 }
 
@@ -531,4 +544,39 @@ align-items: center;
 
 .flex {
 	display: flex;
+}
+
+@media (max-width:1000px) {
+	.main__section__blocks__grey {
+		margin-bottom: 20px;
+	}
+	.main__section__blocks__beige {
+		margin-bottom: 20px;
+	}
+	.main__section__blocks__pink {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width:915px) {
+
+	.header {
+		padding-top: 200px;
+	}
+}
+
+@media (max-width:850px) {
+	.footer__col {
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	}
+}
+
+@media (max-width:600px) {
+	.footer__col__cat {
+	  	margin: 0 auto;
+	}
+	.footer__col__inst {
+		margin: 0 auto;
+	}
 }

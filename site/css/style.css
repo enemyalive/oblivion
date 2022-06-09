@@ -226,6 +226,8 @@
           align-items: flex-start;
   margin-bottom: 20px;
   text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main__section__blocks__grey {
@@ -236,6 +238,8 @@
           box-shadow: 0px 12px 29px 0px rgba(0, 0, 0, 0.35), inset 0 0 0 0;
   -webkit-transition: 1s;
   transition: 1s;
+  min-width: 200px;
+  min-height: 370px;
 }
 
 .main__section__blocks__grey:hover {
@@ -251,6 +255,8 @@
           box-shadow: 0px 12px 29px 0px rgba(0, 0, 0, 0.35), inset 0 0 0 0;
   -webkit-transition: 1s;
   transition: 1s;
+  min-width: 200px;
+  min-height: 370px;
 }
 
 .main__section__blocks__beige:hover {
@@ -266,6 +272,8 @@
           box-shadow: 0px 12px 29px 0px rgba(0, 0, 0, 0.35), inset 0 0 0 0;
   -webkit-transition: 1s;
   transition: 1s;
+  min-width: 200px;
+  min-height: 370px;
 }
 
 .main__section__blocks__pink:hover {
@@ -368,6 +376,8 @@
   width: 63.5%;
   margin: 0 auto;
   padding-top: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__col__p {
@@ -386,6 +396,10 @@
 .footer__col__p:hover {
   font-weight: 600;
   color: #E85A4F;
+}
+
+.footer__col__p--marg {
+  margin-bottom: 20px;
 }
 
 .footer__col__cop {
@@ -411,7 +425,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .footer__col__inst__p {
@@ -458,6 +472,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .top {
@@ -543,7 +559,7 @@
 }
 
 .width--nav {
-  width: 16%;
+  width: 302px;
 }
 
 .background--nav {
@@ -559,7 +575,7 @@
 }
 
 .margin--nav3 {
-  margin-left: 16%;
+  margin-left: 302px;
 }
 
 .turn--nav {
@@ -575,5 +591,39 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 1000px) {
+  .main__section__blocks__grey {
+    margin-bottom: 20px;
+  }
+  .main__section__blocks__beige {
+    margin-bottom: 20px;
+  }
+  .main__section__blocks__pink {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 915px) {
+  .header {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer__col {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__col__cat {
+    margin: 0 auto;
+  }
+  .footer__col__inst {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
